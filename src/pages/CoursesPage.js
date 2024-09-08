@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Wrapper from '../components/Wrapper';
 
 const CourseCard = ({ course, onPurchase }) => (
-  <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+  <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full max-sm:w-[100%]">
     <img src={course.imageUrl} alt={course.title} className="w-full h-48 object-cover" />
     <div className="p-4 flex-grow">
       <h3 className="text-xl font-semibold text-blue-700">{course.title}</h3>
@@ -41,7 +41,7 @@ const navigation = [
 ];
 
 const Sidebar = ({ navigation, activeCategory, onCategoryClick }) => (
-  <div className="w-[20%] h-screen border-r bg-white">
+  <div className="w-[20%] h-screen border-r bg-white max-sm:hidden">
     <div className="px-4 py-6">
       <ul className="space-y-1">
         {navigation.map((item, index) => (

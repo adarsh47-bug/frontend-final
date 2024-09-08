@@ -212,7 +212,7 @@ const ProfileSection = ({ id, title, content, isList = false, itemFormat }) => (
 );
 
 const Sidebar = ({ profile }) => (
-  <aside className="h-[80vh] w-[25%] rounded-xl border border-gray-700 bg-gray-800 p-4 shadow-lg">
+  <aside className="h-[80vh] w-[25%] max-sm:w-[100%] max-sm:h-fit my-6 rounded-xl border border-gray-700 bg-gray-800 p-4 shadow-lg">
     <div className="flex items-center gap-4">
       <img
         alt="User Avatar"
@@ -334,7 +334,7 @@ const ProfilePage = () => {
   return (
     <div className="p-4">
       <h1 className="text-3xl font-bold text-blue-800 mb-6">Your Profile</h1>
-      <div className="flex flex-row container">
+      <div className="flex flex-row container max-sm:flex-col">
         <Sidebar profile={profile} />
         <div className="mx-auto ml-6 lg:w-[100%] flex flex-wrap space-y-4">
           {sections.map(section => (

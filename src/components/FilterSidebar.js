@@ -2,7 +2,7 @@ import React from 'react';
 
 const FilterSidebar = ({ filters, onFilterChange }) => {
   return (
-    <div className='flex flex-col space-y-4'>
+    <div className='flex flex-col space-y-4 max-sm:hidden'>
       <div className="filter-sidebar p-4 bg-[#cfcfcf09] h-fit rounded-lg">
         <h2 className="text-xl font-bold mb-4">Filter Jobs</h2>
         <div className="mb-4">

@@ -35,7 +35,7 @@ const navigation = [
 ];
 
 const Sidebar = ({ navigation, activeCategory, onCategoryClick }) => (
-  <div className="w-[20%] h-screen border-r bg-white">
+  <div className="w-[20%] h-screen border-r bg-white max-sm:hidden">
     <div className="px-4 py-6">
       <ul className="space-y-1">
         {navigation.map((item, index) => (
@@ -113,7 +113,7 @@ const EventsPage = () => {
     <Wrapper>
       <div className="flex w-[100vw]">
         <Sidebar navigation={navigation} activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
-        <div className="w-[80%] p-8">
+        <div className="w-[80%] max-sm:w-[100%] max-sm:px-0 p-8">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-3xl font-bold text-blue-800">{activeCategory}</h1>
           </div>

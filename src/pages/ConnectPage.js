@@ -19,7 +19,7 @@ const ConnectCard = ({
   connected = false,
 }) => {
   return (
-    <div className="rounded-2xl border border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8 w-[30vw]" role="alert">
+    <div className="rounded-2xl border border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8 w-[30vw] max-sm:w-[100%]" role="alert">
       <div className="flex items-center gap-4">
         <img
           src={profileImage}
@@ -193,7 +193,7 @@ const AlumniList = ({ alumni, isConnectedTab, onConnect }) => {
 
 const Sidebar = ({ navigation, activeTab, onTabClick }) => {
   return (
-    <div className="w-[20%] h-screen flex flex-col justify-between border-e bg-white">
+    <div className="max-sm:hidden w-[20%] h-screen flex flex-col justify-between border-e bg-white">
       <div className="px-4 py-6">
         <ul className="mt-6 space-y-1">
           {navigation.map((item, index) => (
@@ -423,7 +423,7 @@ const ConnectPage = () => {
         activeTab={activeTab}
         onTabClick={handleTabClick}
       />
-      <div className="w-[80%] p-8">
+      <div className="w-[80%] max-sm:w-[100%] max-sm:px-0 p-8">
         <h1 className="text-3xl font-bold text-blue-800 mb-6">{activeTab}</h1>
         {activeTab === 'My Groups' && (
           <div>

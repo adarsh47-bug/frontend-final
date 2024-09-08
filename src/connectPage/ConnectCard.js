@@ -2,7 +2,7 @@ import React from 'react';
 
 const ConnectCard = ({ name, graduationYear, degree, currentPosition, location, contact, profileImage }) => {
   return (
-    <div className="rounded-2xl border border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8 w-[30vw]" role="alert">
+    <div className="rounded-2xl border border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8 w-[30vw] max-sm:w-[100%]" role="alert">
       <div className="flex items-center gap-4">
         <img
           src={profileImage}

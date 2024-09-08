@@ -47,7 +47,7 @@ const alumniData = {
 
 const Sidebar = ({ navigation, onClickUniversity, activeUniversity }) => {
   return (
-    <div className="w-[20%] flex h-screen flex-col justify-between border-e bg-white">
+    <div className="w-[20%] max-sm:hidden flex h-screen flex-col justify-between border-e bg-white">
       <div className="px-4 py-6">
         <ul className="mt-6 space-y-1">
           {navigation.map((item, index) => (
@@ -120,7 +120,7 @@ const UniversityPage = () => {
           onClickUniversity={handleUniversityClick} // Pass the click handler to Sidebar
           activeUniversity={selectedUniversity} // Pass the active university
         />
-        <div className="w-[80%] p-8">
+        <div className="w-[80%] max-sm:w-[100%] max-sm:px-0 p-8">
           <h1 className="text-3xl font-bold text-blue-800 mb-1">Universities</h1>
           <p className="text-lg text-gray-700 mb-2">
             Select a university to view the alumni.
