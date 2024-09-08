@@ -19,6 +19,8 @@ import EventDetailsPage from './pages/EventDetailsPage';
 import ScrollToTop from './components/ScrollToTop';
 import UniversityPage from './pages/UniversityPage';
 import IntroPage from './pages/IntroPage';
+import CareerAssistanceAI from './aimodels/CareerAssistanceAI';
+import LearnWithMeAI from './aimodels/LearnWithMeAI';
 
 const App = () => {
   return (
@@ -44,6 +46,8 @@ const App = () => {
           <Route path="/" element={<IntroPage />} />
           <Route path="*" element={<h1>Not Found</h1>} />
 
+          <Route path="/careerai" element={<CareerAssistanceAI />} />
+          <Route path="/learnai" element={<LearnWithMeAI />} />
         </Routes>
       </div>
       <Footer />

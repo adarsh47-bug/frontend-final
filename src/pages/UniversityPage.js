@@ -27,12 +27,21 @@ const alumniData = {
   'MNIT, Jaipur': [
     { name: 'John Doe', graduationYear: 2015, degree: 'B.Tech', currentPosition: 'Software Engineer', location: 'Pune', contact: 'john@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
     { name: 'Jane Smith', graduationYear: 2018, degree: 'B.Tech', currentPosition: 'Data Analyst', location: 'Bangalore', contact: 'jane@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    , { name: 'John Doe', graduationYear: 2015, degree: 'B.Tech', currentPosition: 'Software Engineer', location: 'Pune', contact: 'john@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Jane Smith', graduationYear: 2018, degree: 'B.Tech', currentPosition: 'Data Analyst', location: 'Bangalore', contact: 'jane@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
   ],
   'BITS, Pilani': [
     { name: 'Alice Johnson', graduationYear: 2017, degree: 'B.Tech', currentPosition: 'Product Manager', location: 'Mumbai', contact: 'alice@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
     { name: 'Bob Brown', graduationYear: 2016, degree: 'B.Tech', currentPosition: 'DevOps Engineer', location: 'Hyderabad', contact: 'bob@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    , { name: 'Alice Johnson', graduationYear: 2017, degree: 'B.Tech', currentPosition: 'Product Manager', location: 'Mumbai', contact: 'alice@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Bob Brown', graduationYear: 2016, degree: 'B.Tech', currentPosition: 'DevOps Engineer', location: 'Hyderabad', contact: 'bob@example.com', profileImage: 'https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
   ],
-  // Add more alumni data for other universities
+  'JUET, Guna': [
+    { name: 'Charlie Wilson', graduationYear: 2019, degree: 'B.Tech', currentPosition: 'Software Developer', location: 'Chennai', contact: 'lorem@g.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Sam Wilson', graduationYear: 2009, degree: 'M.Tech', currentPosition: 'Software Designer', location: 'Chennai', contact: 'lorem@g.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    , { name: 'Charlie Wilson', graduationYear: 2019, degree: 'B.Tech', currentPosition: 'Software Developer', location: 'Chennai', contact: 'lorem@g.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Sam Wilson', graduationYear: 2009, degree: 'M.Tech', currentPosition: 'Software Designer', location: 'Chennai', contact: 'lorem@g.com', profileImage: 'https://plus.unsplash.com/premium_photo-1672243483821-5d3855a21809?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  ]// Add more alumni data for other universities
 };
 
 
